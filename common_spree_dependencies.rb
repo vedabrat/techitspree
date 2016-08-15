@@ -3,10 +3,21 @@
 # the one component of Spree.
 source 'https://rubygems.org'
 
+gem 'ruby', '2.3.1p112'
+gem 'spree_braintree_vzero', github: 'spree-contrib/spree_braintree_vzero'
+gem 'spree_address_book', github: 'spree-contrib/spree_address_book'
+gem 'spree_digital', github: 'spree-contrib/spree_digital'
+gem 'spree_social', github: 'spree-contrib/spree_social'
+gem 'spree_related_products', github: 'spree-contrib/spree_related_products'
+gem 'spree_active_shipping', github: 'spree-contrib/spree_active_shipping'
+gem 'spree_product_assembly', github: 'spree-contrib/spree-product-assembly'
+gem 'spree_auth_devise', github: 'spree/spree_auth_devise'
+gem 'spree_gateway', github: 'spree/spree_gateway'
 gem 'coffee-rails', '~> 4.1.1'
 gem 'sass-rails', '~> 5.0.0'
 gem 'sqlite3', platforms: [:ruby, :mingw, :mswin, :x64_mingw]
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
+gem 'rails_12factor', group: :production
 
 platforms :jruby do
   gem 'jruby-openssl'
